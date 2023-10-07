@@ -1,0 +1,15 @@
+app:
+  name: lematthe-poi-backend-app
+  namespace: lematthe
+  cluster: .apps.rosa-x4jc7.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-gh/lematthe-backend
+  org: rhdh-gh
+  name: lematthe-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: lematthe/poi-backend-app
+  tag: latest
